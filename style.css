@@ -1,0 +1,136 @@
+body{
+    background-color: #F3F5FC;
+}
+
+.logo{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.modulo-encriptar{
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    text-align: left;
+    margin-top: 5%;
+}
+
+.campo-texto{
+    position: relative;
+    border: none;
+    background-color: #F3F5FC;
+    height: 55vh;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+    color: #0A3871;
+    font-size: 2em;
+}
+
+.campo-texto::placeholder{
+    color: #0A3871;
+}
+
+.contenedor-generado{
+    display: inline-flex;
+    height: 95vh;
+    margin-right: 0;
+    width: 30%;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+}
+
+.texto-defecto{
+    margin: auto;
+    text-align: center;
+}
+
+.texto-generado{
+    margin: 3%;
+}
+
+.advertencia, .botones {
+    text-align: left;
+}
+
+.boton{
+    border-radius: 10px;
+    width: 25%;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.boton-encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: none;
+}
+
+.boton-desencriptar{
+    background-color: transparent;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+}
+
+@media screen and (max-width:1024px){
+    .logo, .modulo-encriptar{
+        display: block;
+        width: auto;
+        font-size: 2em;
+    }
+
+    .campo-texto {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .campo-texto::placeholder{
+        text-align: center;
+    }
+
+    .botones {
+        text-align: center;
+    }
+
+    .boton{
+        width: 40%;
+        height: 4em;
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .muñeco{
+        display: none;
+    }
+
+    .contenedor-generado{
+        display: block;
+        width: auto;
+        height: 20vh;
+        margin: auto;
+        background-color: #FFFFFF;
+        border-radius: 25px;
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width:480px){
+    .logo, .modulo-encriptar{
+        font-size: 1.2em;
+    }
+
+    .boton{
+        width: 100%;
+        height: 4em;
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .contenedor-generado{
+        height: 18vh;
+        font-size: 1.5em;
+    }
+}
+
